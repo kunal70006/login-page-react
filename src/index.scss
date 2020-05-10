@@ -77,6 +77,18 @@ a {
 }
 
 .btn:hover {
+  outline: none;
   background-color: lightseagreen;
   color: rgb(240, 240, 240);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
 }

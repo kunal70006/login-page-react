@@ -104,7 +104,24 @@ a {
 }
 
 .btn:hover {
+  outline: none;
   background-color: lightseagreen;
   color: #f0f0f0;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=index.css.map */
