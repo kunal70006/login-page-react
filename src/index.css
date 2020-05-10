@@ -1,16 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
-
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   font-family: "Source Sans Pro", sans-serif;
   min-height: 100vh;
   overflow: hidden;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#d299c2), to(#fef9d7));
   background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
   letter-spacing: 1.5px;
 }
@@ -24,8 +25,12 @@ h1 {
 
 .App {
   display: block;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 
@@ -39,15 +44,36 @@ h1 {
   padding: 10px;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid rgb(104, 104, 104);
-  color: rgb(46, 46, 46);
+  border-bottom: 1px solid #686868;
+  color: #2e2e2e;
+}
+
+.username::-webkit-input-placeholder,
+.password::-webkit-input-placeholder,
+.email::-webkit-input-placeholder {
+  font-size: 20px;
+  color: #686868;
+}
+
+.username:-ms-input-placeholder,
+.password:-ms-input-placeholder,
+.email:-ms-input-placeholder {
+  font-size: 20px;
+  color: #686868;
+}
+
+.username::-ms-input-placeholder,
+.password::-ms-input-placeholder,
+.email::-ms-input-placeholder {
+  font-size: 20px;
+  color: #686868;
 }
 
 .username::placeholder,
 .password::placeholder,
 .email::placeholder {
   font-size: 20px;
-  color: rgb(104, 104, 104);
+  color: #686868;
 }
 
 .username:focus,
@@ -58,7 +84,7 @@ h1 {
 
 a {
   text-decoration: none;
-  color: rgb(104, 104, 104);
+  color: #686868;
   font-size: 16px;
   font-weight: 600;
 }
@@ -72,11 +98,13 @@ a {
   border: 2px solid lightseagreen;
   border-radius: 10px;
   padding: 5px;
-  color: rgb(46, 46, 46);
+  color: #2e2e2e;
+  -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
 }
 
 .btn:hover {
   background-color: lightseagreen;
-  color: rgb(240, 240, 240);
+  color: #f0f0f0;
 }
+/*# sourceMappingURL=index.css.map */
